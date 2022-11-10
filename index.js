@@ -1,6 +1,6 @@
-const inquirer = require(`inquirer`);
-const fs = require(`fs`);
-const generateMarkdown = require(`./utils/generateMarkdown.js`)
+const inquirer = require('inquirer');
+const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js')
 
 const questions = [    
     {
@@ -47,7 +47,7 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license does this repo use?',
-        choices: ['Creative Commons', 'ISC', 'MIT', 'Open Data Commons']
+        choices: ['Apache 2.0', 'Creative Commons', 'ISC', 'MIT', 'Open Data Commons', 'Other']
     }
 ]
 
@@ -55,10 +55,8 @@ function init() {
     return inquirer.prompt(questions);
 };
 
-init()
-.then((data) => {
-    // is this writeFile or writeToFile?
-    fs.writeToFile('exampleREADME.md', data, (err) =>
+init().then((generateMarkdown) => {
+    fs.writeFileSync('exampleREADME.md', generateMarkdown, (err) =>
         err ? console.log(err) : console.log('README.md created!')
     );
 });
