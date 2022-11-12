@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown.js')
 
+// question prompts to create the README
 const questions = [    
     {
         type: 'input',
@@ -47,16 +48,22 @@ const questions = [
         type: 'list',
         name: 'license',
         message: 'What license does this repo use?',
-        choices: ['Apache 2.0', 'Creative Commons', 'ISC', 'MIT', 'Open Data Commons', 'Other']
+        choices: ['Apache 2.0', 'BSD', 'GNU', 'MIT']
     }
 ]
 
 function init() {
-    return inquirer.prompt(questions);
-};
+    return inquirer.prompt(questions)
+    .then((data) => {
+        console.log(JSON.stringify(data, null, ""));
+        writeToFile("./exampleREADME.md", data);
+    });
+}
 
-init().then((generateMarkdown) => {
-    fs.writeFileSync('exampleREADME.md', generateMarkdown, (err) =>
+function writeToFile(createReadme, data) {
+    fs.writeFile(createReadme, generateMarkdown(data), (err) =>
         err ? console.log(err) : console.log('README.md created!')
     );
-});
+}
+
+init();
