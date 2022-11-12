@@ -2,9 +2,11 @@
 
 ## Description
 
-To create a command-line application that dynamically generates a professional README.md file from a user's input using the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
+To help busy devs save time, here's a command line app that quickly creates a README.md file. This uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
 
-To use this app, use the following command:
+## Installation
+
+To use this app, use the following command in the terminal:
 ```bash
 node index.js
 ```
@@ -40,10 +42,15 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
+## Technology used
+
+* JavaScript
+* Node.js
+
 ## Contact
 
 For questions about the repo, contact [Susan](https://github.com/s-s-lee/).
 
 ## Licensing
 
-This repo uses the [MIT license](https://github.com/s-s-lee/readme-generator/blob/main/LICENSE).
+This repo uses the [![MIT license](https://img.shields.io/badge/License-MIT-green.svg)](https://lbesson.mit-license.org/)

@@ -8,6 +8,7 @@
   * [License](##-Installation)
   * [Contribute](##-Contribute)
   * [Testing](##-Testing)
+  * [License](##-License)
   * [Questions](##-Contact)
   
   ## Installation
