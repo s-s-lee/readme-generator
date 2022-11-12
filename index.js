@@ -52,6 +52,7 @@ const questions = [
     }
 ]
 
+// asks user questions to supply the README content
 function init() {
     return inquirer.prompt(questions)
     .then((data) => {
@@ -60,6 +61,7 @@ function init() {
     });
 }
 
+// function that will create the README or notify the user of the error
 function writeToFile(createReadme, data) {
     fs.writeFile(createReadme, generateMarkdown(data), (err) =>
         err ? console.log(err) : console.log('README.md created!')

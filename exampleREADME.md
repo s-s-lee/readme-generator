@@ -1,27 +1,26 @@
-# a
+# Solar Eclipse Countdown
   ## Description
 
-  a
+  To find out when the next solar eclipse will occur
   ## Table of Contents
   * [Installation](##-Installation)
   * [Usage](##-Usage)
   * [License](##-Installation)
   * [Contribute](##-Contribute)
   * [Testing](##-Testing)
-  * [License](##-License)
   * [Questions](##-Contact)
   
   ## Installation
-  a
+  Copy the repo from GitHub, and install
 
   ## Usage
-  a
+  Project can be used whenever, wherever!
 
   ## Contribute
-  a
+  If interested in contributing, contact the repo owner.
 
   ## Testing
-  a
+  No particular testing included. If you find bugs, please contact the repo owner. 
 
   
   ## License
@@ -29,5 +28,5 @@
     
 
   ## Contact
-  * GitHub user: a 
-  * Email: a
+  * GitHub user: s-s-lee 
+  * Email: sohzahn@gmail.com

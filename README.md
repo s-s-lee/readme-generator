@@ -1,8 +1,8 @@
-# README Generator
+# Simple README Generator
 
 ## Description
 
-To help busy devs save time, here's a command line app that quickly creates a README.md file. This uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
+To help busy devs save time ⏲️, here's a command line app that quickly creates a README.md file 📋. This uses the [Inquirer package](https://www.npmjs.com/package/inquirer/v/8.2.4).
 
 ## Installation
 
@@ -13,8 +13,9 @@ node index.js
 
 ## Preview
 
-Preview of the README generator.
-<!-- recorded video link here -->
+[Video of README Generator live in action!](https://drive.google.com/file/d/1dVeH1kWGQ70ZdEex1zJWuZ-xREX6a6jn/view?usp=sharing)
+
+![screenshot of readme generator](/assets/readme-generator-screenshot.png)
 
 ## User Story
 ```
@@ -42,7 +43,7 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 ```
 
-## Technology used
+## Tech used
 
 * JavaScript
 * Node.js
